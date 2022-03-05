@@ -26,14 +26,14 @@ lock:
     initial: ''
     name: unfurl
   - url: https://github.com/faizanaminmalik/unfurl_hello.git#:.
-    revision: 974dae412e56323be541fc135048ab114a9ce7ce-dirty
+    revision: 32d7ec7c5a7730d0c5c62ae81edf14e617ca4cac-dirty
     initial: 4d0b95f44855302e74dcc5ffc1c87618421bafed
     name: self
   - url: https://github.com/faizanaminmalik/unfurl_hello.git
-    revision: 974dae412e56323be541fc135048ab114a9ce7ce-dirty
+    revision: 32d7ec7c5a7730d0c5c62ae81edf14e617ca4cac-dirty
     initial: 4d0b95f44855302e74dcc5ffc1c87618421bafed
   - url: https://github.com/faizanaminmalik/unfurl_hello.git
-    revision: 974dae412e56323be541fc135048ab114a9ce7ce-dirty
+    revision: 32d7ec7c5a7730d0c5c62ae81edf14e617ca4cac-dirty
     initial: 4d0b95f44855302e74dcc5ffc1c87618421bafed
   ensembles:
     localhost:
@@ -52,18 +52,18 @@ status:
       readyState:
         local: ok
         state: configured
-      lastConfigChange: A235GWGl0001
-      created: A235GWGl0001
+      lastConfigChange: A235GdKe0001
+      created: A235GdKe0001
 lastJob:
-  changeId: A235GWGl0000
-  startTime: 2022-03-05-16-32-16-762399
+  changeId: A235GdKe0000
+  startTime: 2022-03-05-16-39-20-661479
   workflow: deploy
   options: {}
   summary: 1 tasks (1 changed, 1 ok, 0 failed, 0 unknown, 0 skipped)
-  startCommit: 974dae412e56323be541fc135048ab114a9ce7ce
+  startCommit: 32d7ec7c5a7730d0c5c62ae81edf14e617ca4cac
   specDigest: fffde9f0598f15d947b1100fa43fdc88761b29eb
   priority: required
   readyState:
     local: ok
-  changelog: jobs/job2022-03-05-16-32-16-762399.yaml
+  changelog: jobs/job2022-03-05-16-39-20-661479.yaml
 jobsLog: jobs.tsv
