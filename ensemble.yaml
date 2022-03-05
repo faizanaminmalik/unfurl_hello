@@ -1,0 +1,68 @@
+apiVersion: unfurl/v1alpha1
+kind: Ensemble
+spec:
+  service_template:
+    topology_template:
+      node_templates:
+        shellscript-example:
+          type: tosca:Root
+          interfaces:
+            Standard:
+              configure:
+                implementation: |
+                  if ! [ -x "$(command -v testvars)" ]; then
+                    source testvars.sh
+                  fi
+                inputs:
+                  command: echo "Hello World.."
+lock:
+  runtime:
+    unfurl:
+      version: 0.3.2
+      digest: ''
+  repositories:
+  - url: file:/Users/faizan/.unfurl_home/.venv/lib/python3.9/site-packages/unfurl
+    revision: ''
+    initial: ''
+    name: unfurl
+  - url: file:/Users/faizan/unfurl-projects/unfurl_hello
+    revision: ''
+    initial: ''
+    name: self
+  - url: https://github.com/faizanaminmalik/unfurl_hello.git
+    revision: ee25707fbe46f19cbd923195c6387485bda8d9d9-dirty
+    initial: 4d0b95f44855302e74dcc5ffc1c87618421bafed
+  - url: https://github.com/faizanaminmalik/unfurl_hello.git
+    revision: ee25707fbe46f19cbd923195c6387485bda8d9d9-dirty
+    initial: 4d0b95f44855302e74dcc5ffc1c87618421bafed
+  ensembles:
+    localhost:
+      uri: git-local://201380932e4c793b0eaff06648b50ed8cf8ead7e:/ensemble.yaml
+      changeId:
+      digest: 4a2788c544b0495cd20d0476d07fb6a401646c91
+      manifest:
+        file: ensemble/ensemble.yaml
+status:
+  inputs: {}
+  outputs: {}
+  instances:
+    shellscript-example:
+      template: shellscript-example
+      priority: required
+      readyState:
+        local: ok
+        state: configured
+      lastConfigChange: A235Frp50001
+      created: A235Frp50001
+lastJob:
+  changeId: A235Frp50000
+  startTime: 2022-03-05-15-53-51-084341
+  workflow: deploy
+  options: {}
+  summary: 1 tasks (1 changed, 1 ok, 0 failed, 0 unknown, 0 skipped)
+  specDigest: 453db8a43356c27992d3e61e33ebf4fafc92725a
+  priority: required
+  readyState:
+    local: ok
+  changelog: jobs/job2022-03-05-15-53-51-084341.yaml
+jobsLog: jobs.tsv
